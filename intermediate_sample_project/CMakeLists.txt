@@ -18,9 +18,9 @@ configure_file (
   "${PROJECT_BINARY_DIR}/TutorialConfig.h"
 )
 
-# we include the the "MathFunctions" library so that it gets loaded during the build
-# intmating the CMake about "MathFunctions" by using "add_subdirectory()"  command
+# we include the user defined "MathFunctions" library so that it gets loaded during the build
 include_directories ("${PROJECT_SOURCE_DIR}/MathFunctions")
+# Intimating the CMake about "MathFunctions" by using "add_subdirectory()"  command
 add_subdirectory (MathFunctions)
 
 # setting a variable for easy usage
