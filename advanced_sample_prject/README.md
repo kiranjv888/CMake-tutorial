@@ -3,9 +3,8 @@ Advanced CMake Tutorial
 
 For this Tutorial, you have to configure CMake using  Wizard mode, use below command
 
-$ cmake -i -H. -Bbuild
-
-which takes you to  Wizard mode(interactively without a GUI),
+        $ cmake -i -H. -Bbuild
+which takes you to  Wizard mode(interactively without a GUI),<br>
 where you can modify the default flags/paths/variable values
 
 Here in this tutorial, we learn about
