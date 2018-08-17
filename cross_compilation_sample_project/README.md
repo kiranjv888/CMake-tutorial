@@ -14,6 +14,4 @@ Intermediate CMake Tutorial
     The environment variables to set are in "envi_variables.sh" file.
 2. Command to configure for the project,<br>
    
-                $ cmake  -H. -Bcross_build-DCMAKE_CXX_FLAGS="-g -std=c++11 -Wall"   -DCMAKE_TOOLCHAIN_FILE=./sample_cross_compile_toolchain_file.cmake   -DCMAKE_BUILD_TYPE=Debug
-
-
+       $ cmake  -H. -Bcross_build-DCMAKE_CXX_FLAGS="-g -std=c++11 -Wall"   -DCMAKE_TOOLCHAIN_FILE=./sample_cross_compile_toolchain_file.cmake   -DCMAKE_BUILD_TYPE=Debug
