@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../MathFunctions/MathFunctions.h
+
+/home/jinka/git/CMake_tutorial/auto_testing_sample_project/tutorial.cpp
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+TutorialConfig.h
+/home/jinka/git/CMake_tutorial/auto_testing_sample_project/TutorialConfig.h
+MathFunctions.h
+/home/jinka/git/CMake_tutorial/auto_testing_sample_project/MathFunctions.h
+
+TutorialConfig.h
+

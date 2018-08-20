@@ -1,0 +1,2 @@
+/home/jinka/git/CMake_tutorial/advanced_sample_project/build/MathFunctions/CMakeFiles/MathFunctions.dir
+/home/jinka/git/CMake_tutorial/advanced_sample_project/build/CMakeFiles/Tutorial.dir
