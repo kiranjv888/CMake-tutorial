@@ -1,0 +1,1 @@
+/home/jinka/git/CMake_tutorial/basic_sample_project/build/CMakeFiles/Tutorial.dir

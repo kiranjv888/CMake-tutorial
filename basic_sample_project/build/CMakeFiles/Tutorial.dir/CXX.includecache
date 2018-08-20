@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jinka/git/CMake_tutorial/basic_sample_project/tutorial.cpp
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+
