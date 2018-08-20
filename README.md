@@ -74,77 +74,78 @@ To run the executable.
 
 Here are some of CMake’s global variables, You should know
 
-**CMAKE_BINARY_DIR** : If you are building in-source, this is the same as CMAKE_SOURCE_DIR, otherwise this is the top level directory of your build tree.
+1. **CMAKE_BINARY_DIR** : If you are building in-source, this is the same as CMAKE_SOURCE_DIR, otherwise this is the top level directory of your build tree.
 
-**CMAKE_SOURCE_DIR** : This is the directory, from which CMake was started, i.e. the top-level source directory.
+2. **CMAKE_SOURCE_DIR** : This is the directory, from which CMake was started, i.e. the top-level source directory.
     
-**EXECUTABLE_OUTPUT_PATH** : Set this variable to specify a common place where CMake should put all executable files (instead of CMAKE_CURRENT_BINARY_DIR).<br>
+3. **EXECUTABLE_OUTPUT_PATH** : Set this variable to specify a common place where CMake should put all executable files (instead of CMAKE_CURRENT_BINARY_DIR).<br>
   
-     Ex: SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+       Ex: SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
-**LIBRARY_OUTPUT_PATH**: Set this variable to specify a common place where CMake should put all libraries (instead of CMAKE_CURRENT_BINARY_DIR).<br>
+4. **LIBRARY_OUTPUT_PATH**: Set this variable to specify a common place where CMake should put all libraries (instead of CMAKE_CURRENT_BINARY_DIR).<br>
 
-    Ex: SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+       Ex: SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
-**PROJECT_NAME** : the name of the project set by PROJECT() command.
+5. **PROJECT_NAME** : the name of the project set by PROJECT() command.
 
-**PROJECT_SOURCE_DIR** : contains the full path to the root of your project source directory, i.e. to the nearest directory where CMakeLists.txt contains the PROJECT() command.
+6. **PROJECT_SOURCE_DIR** : contains the full path to the root of your project source directory, i.e. to the nearest directory where CMakeLists.txt contains the PROJECT() command.
 
 
 ## Cmake Commands  
 
 These are some CMake commands mostly used,
 
-**cmake_minimum_required ()** : This command make sure the minimum CMkae version required for the build process.<br>
+1. **cmake_minimum_required ()** : This command make sure the minimum CMkae version required for the build process.<br>
 An exception is raised if the command fails.<br>
 
-    Ex : cmake_minimum_required (VERSION 2.6)
+       Ex : cmake_minimum_required (VERSION 2.6)
 
-**project ()** : This command is used to give a name to the project you are working on.<br>
+2. **project ()** : This command is used to give a name to the project you are working on.<br>
 
-    Ex : project (Tutorial)
+       Ex : project (Tutorial)
 
-**add_executable ()**	: This is the place  you say the CMake to start the comilation process.<br> 
+3. **add_executable ()**	: This is the place  you say the CMake to start the comilation process.<br> 
 In the below example we say to compilation with the test.cpp.<br>
 
-    Ex : add_executable(Tutorial tutorial.cpp)
+       Ex : add_executable(Tutorial tutorial.cpp)
 
-**configure_file ()**	: Copies a file <input> to file <output> and substitutes variable values referenced in the file content.<br>
+4. **configure_file ()**	: Copies a file <input> to file <output> and substitutes variable values referenced in the file content.<br>
  syntax : configure_file(<input> <output>)<br>	
   
-    Ex : configure_file ("${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"  "${PROJECT_BINARY_DIR}/TutorialConfig.h")
+       Ex : configure_file ("${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"  "${PROJECT_BINARY_DIR}/TutorialConfig.h")
 
-**option ()**	: Provides an option that the user can optionally select.<br>
+5. **option ()**	: Provides an option that the user can optionally select.<br>
  syntax : option(<option_variable>  "help string describing option"     [initial value])<br>
  
-    Ex : option (USE_MYMATH  "Use tutorial provided math implementation" ON)
+       Ex : option (USE_MYMATH  "Use tutorial provided math implementation" ON)
 
-**include_directories ()** : Loads and runs the CMake with the files that are requested to include.<br> 
+6. **include_directories ()** : Loads and runs the CMake with the files that are requested to include.<br> 
 
-    Ex : include_directories ("${PROJECT_SOURCE_DIR}/MathFunctions")
+       Ex : include_directories ("${PROJECT_SOURCE_DIR}/MathFunctions")
 
-**add_subdirectory ()** : Adds the requested subdirectory to the build.<br>
+7. **add_subdirectory ()** : Adds the requested subdirectory to the build.<br>
 
-    Ex : add_subdirectory (MathFunctions)
+       Ex : add_subdirectory (MathFunctions)
 
-**set ()** : Used to set CMake/cache/environment variable to the given value.<br>
+8. **set ()** : Used to set CMake/cache/environment variable to the given value.<br>
 
-    Ex : set (Tutorial_VERSION_MAJOR 1)
+       Ex : set (Tutorial_VERSION_MAJOR 1)
 
-**target_link_libraries ()** : Links the libraries to the Executable.<br> 
+9. **target_link_libraries ()** : Links the libraries to the Executable.<br> 
 
-    Ex : target_link_libraries (Tutorial  ${EXTRA_LIBS})
+       Ex : target_link_libraries (Tutorial  ${EXTRA_LIBS})
 
-**install ()** : specifies the rules to fallow during isntallation.can be executed externally with below command,<br>
-   **$ make install**
+10. **install ()** : specifies the rules to fallow during isntallation.can be executed externally with below command,<br>
+
+        **$ make install**
 	
-    Ex :install (TARGETS Tutorial DESTINATION bin)
-        install (FILES  "${PROJECT_BINARY_DIR}/TutorialConfig.h"  DESTINATION include)	
+        Ex :install (TARGETS Tutorial DESTINATION bin)
+            install (FILES  "${PROJECT_BINARY_DIR}/TutorialConfig.h"  DESTINATION include)	
    In the above example, TARGETS is used for executables and for library files FILES is used.<br>
 
-**check_function_exists ()**: This is used to check the system function existance, if present can set a macro.<br>
+11. **check_function_exists ()**: This is used to check the system function existance, if present can set a macro.<br>
 
-    Ex : check_function_exists (printf HAVE_PRINTF)
+        Ex : check_function_exists (printf HAVE_PRINTF)
 
 ## CMake Options  
 Here are some options used most commonly,
