@@ -179,7 +179,7 @@ Kindly follow below-mentioned flow for practical learning, to avoid confusions
 	2. intermediate_sample_project<br>
 	3. advanced_sample_project<br>
 	4. auto_testing_sample_project<br>
-	5. cross_compilation_sample_projec<br>
+	5. cross_compilation_sample_project<br>
 			
 ## References
 
