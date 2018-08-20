@@ -24,7 +24,9 @@ So if you have a platform-independent project, CMake is a way to make it build s
 
 To make it simple, you can accomplish most of the features available in CMake by using Make but with an EXTRA EFFORT. 
 
-## Compilation Process  
+## CMakeLists.txt & Compilation Process
+
+CMake intended to be a cross-platform build process manager, so it defines it's own scripting language with certain sysntax and built-in features. CMake language is written in either **CMakeLists.txt** or file ends with file **<project_name>.cmake**.
 
     The compilation process in CMake performs two steps :
      1. Configuration
@@ -170,3 +172,17 @@ Also, you have to change the Environment variables according to the path of <tar
     -DCMAKE_TOOLCHAIN_FILE=./sample_cross_compile_toolchain_file.cmake   -DCMAKE_BUILD_TYPE=Debug
 
 In above example, we are overwriting the defined "CMAKE_TOOLCHAIN_FILE" with "./sample_cross_compile_toolchain_file.cmake" using "-D" option.
+
+## Practical Examples
+Kindly follow below mentioned flow for practical learning, to avoid confusions
+	1. basic_sample_project
+	2. intermediate_sample_project
+	3. advanced_sample_project
+	4. auto_testing_sample_project
+	5. cross_compilation_sample_project
+			
+
+## References
+
+[https://cmake.org/cmake/help/v3.0/index.html For more CMake sysntax and built-in features]
+[https://www.johnlamp.net/cmake-tutorial-4-libraries-and-subdirectories.html To know how to uild libraries using CMake]
