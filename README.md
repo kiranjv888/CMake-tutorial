@@ -17,10 +17,10 @@ So if you have a platform-independent project, CMake is a way to make it build s
 
     Here are advantages of CMake over Make:
 
-     1. The language used to write CMakeLists.txt files is readable and easier to understand.<br>
-     2. Cross-platform discovery of system libraries/functions/headers/flags.<br>
-     3. Easier to compile your files into a shared library in a platform agnostic way, and in general easier to use than make.<br>
-     4. CMake doesn’t only rely on "Make" to build the project, It supports multiple generators like Xcode, Eclipse, Visual Studio, etc.<br>
+     1. The language used to write CMakeLists.txt files is readable and easier to understand.
+     2. Cross-platform discovery of system libraries/functions/headers/flags.
+     3. Easier to compile your files into a shared library in a platform agnostic way, and in general easier to use than make.
+     4. CMake doesn’t only rely on "Make" to build the project, It supports multiple generators like Xcode, Eclipse, Visual Studio, etc.
 
 To make it simple, you can accomplish most of the features available in CMake by using Make but with an EXTRA EFFORT. 
 
