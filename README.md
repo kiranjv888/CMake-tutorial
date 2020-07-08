@@ -1,7 +1,7 @@
 ## CMake : Introduction  
 
 
-"Hello this is testing""
+"Hello this is testing started""
 CMake stands for cross-platform Make system. CMake is used to control the software compilation process using simple platform and compiler independent configuration files. CMake generates native makefiles and workspaces that can be used in the compiler environment of your choice.
 
 **Author** : Andy Cedilnik, Bill Hoffman, Brad King, Ken Martin, Alexander Neundorf.
